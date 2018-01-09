@@ -8,21 +8,14 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">130</td><td></td><td></td></tr>
+<tr><th colspan="7">testNG Framework</th></tr>
+<tr><td><a href="#t0">chome test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,062</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">base.Config</td><td><a href="#m0">setUp</a></td><td rowspan="1">1515048652102</td><td rowspan="1">106</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">testNG Framework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chome test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.Test1</td><td><a href="#m0">typeByXpath</a></td><td rowspan="1">1515487414730</td><td rowspan="1">8048</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">base.Config#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ch</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: /Users/SanjidaAfrin/Documents/workspace/Framework1/Users/SanjidaAfrin/Desktop/chromedriver
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at base.Config.setUp(Config.java:24)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chome test</h2><h3 id="m0">tests.Test1#typeByXpath</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at utils.WebDriverApi.typeById(WebDriverApi.java:28)
+	at tests.Test1.typeByXpath(Test1.java:17)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,17 +1,17 @@
 package utils;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import org.openqa.selenium.support.ui.Select;
 
-import base.Config;
+
 
 public class WebDriverApi  {
 	
@@ -20,10 +20,8 @@ public class WebDriverApi  {
 	
 	
 	public void typeByXpath(String Locator,String Value){
-		//driver.findElement(By.xpath(Locator)).clear();
-		
-		driver.findElement(By.xpath(Locator)).clear();
-		driver.findElement(By.xpath(Locator)).sendKeys();
+				driver.findElement(By.xpath(Locator)).clear();
+		driver.findElement(By.xpath(Locator)).sendKeys(Value);
 		
 	}
 	public void typeById(String Locator,String Value){
